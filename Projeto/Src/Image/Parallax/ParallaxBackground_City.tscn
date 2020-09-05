@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Src/Image/Background/City/Background 1.png" type="Texture" id=1]
+[ext_resource path="res://Src/Image/Background/City/Foreground.png" type="Texture" id=2]
+[ext_resource path="res://Src/Image/Background/City/BG.png" type="Texture" id=3]
+[ext_resource path="res://Src/Image/Background/City/Middle.png" type="Texture" id=4]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Sprite3" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 777, -23 )
+texture = ExtResource( 3 )
+offset = Vector2( -777, 23 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 777, -23 )
+texture = ExtResource( 1 )
+offset = Vector2( -777, 23 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxLayer"]
+position = Vector2( 777, -23 )
+texture = ExtResource( 2 )
+offset = Vector2( -777, 23 )
+
+[node name="Sprite4" type="Sprite" parent="ParallaxLayer"]
+visible = false
+position = Vector2( 777, -23 )
+texture = ExtResource( 4 )
+offset = Vector2( -777, 23 )
